@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Stream</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+</head>
+
+<header id="header">
+    <h1 id="logo"><a href="index.html">SmartBell</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/logout" class="button secondary">Logout</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+  <body style="background: linear-gradient(45deg, #e44c64 10%, #1d1d26 90%);">
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <h3 class="mt-5" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align:center; padding-top: 60px;">Control Room</h3>
+                <div><img src="{{ url_for('user_feed') }}" width="100%"></div>
+            </div> 
+            <div>
+                <h3 class="mt-5" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></h3>
+                <div><img src="{{ url_for('motion_feed') }}" width="50%" style="float: right; margin-right:-30px; margin-top:-344px;"></div>
+            </div> 
+            <div style="float:left;">
+                <h3 class="mt-5" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></h3>
+                <img src="{{ url_for('weapon_feed') }}" width="50%" style="float: left;">
+            </div>
+            <div>
+                <h3 class="mt-5" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></h3>
+                <img src="{{ url_for('face_feed') }}" width="50%" style="">
+            </div> 
+        </div>
+    </div>
+    </body>
+
+
+</html>
